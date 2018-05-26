@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nova+Mono|Share+Tech+Mono');
+
+@keyframes plane {
+    0% {
+        transform: rotate(26deg);
+        left: -60px;
+        top: 50px;
+    }
+    25% {
+        left: 18%;
+        transform: rotate(21deg);
+        top: 40px;
+    }
+    50% {
+        left: 43%;
+        transform: rotate(16deg);
+        top: 30px;
+    }
+    75% {
+        left: 70%;
+        transform: rotate(11deg);
+        top: 20px;
+    }
+    100% {
+        left: 100%;
+        transform: rotate(6deg);
+        top: 5px;
+    }
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    background-image: url(paper%20airplane.png);
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu > a {
+    color: #444;
+}
+
+.menu > a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #111;
+}
+
+.logo {
+    width: 200px;
+    height: 90px;
+    background-image: url(photo.png);
+    background-position: 8px -56px;
+    background-color: #fffe;
+    border-radius: 100px;
+}
+
+header {
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-right: 10%;
+    height: 110px;
+    background-color: orange;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+
+}
+
+header > .menu {
+    display: flex;
+    width: 50%;
+    height: 30px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.aboutus {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    color: #eee;
+    padding-top: 150px;
+
+}
+
+h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px;
+}
+
+.aboutus > p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+.countr {
+    padding-top: 260px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    background-color: #fffc;
+    border: 6px solid orange;
+    border-radius: 50px;
+    box-shadow: 8px 12px 30px orange;
+
+
+}
+
+
+.countr2,
+.countr4 {
+    margin-top: 100px;
+}
+
+.cb {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.countries {
+    text-align: center;
+    margin-top: -100px;
+    color: #eee;
+    padding-top: 150px;
+
+}
+
+.countr1 {
+    background-image: url(budapest1-12.jpg);
+    background-size: 360px 225px;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+}
+
+.countr2 {
+    background-image: url(Amsterdam_1900x1500px.jpg);
+    background-size: 360px 225px;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+}
+
+.countr3 {
+    background-image: url(d9e884d27f1ad29995ed.jpg);
+    background-size: 360px 225px;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+}
+
+.countr4 {
+    background-image: url(lisbon-tram-istock-seanpavonephoto.jpg-www.jpg);
+    background-size: 360px 225px;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+}
+
+.countr > a > div {
+    font-size: 30px;
+    color: #fff;
+    background-color: #fa0;
+    line-height: 50px;
+    width: 90%;
+    height: 60px;
+    padding-top: 5px;
+    margin: auto;
+    border-radius: 200px;
+    margin-top: 20px;
+    font-family: 'Nova Mono', monospace;
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+
+.countr2 > a > div {
+    font-size: 24px;
+}
+
+.countr > a > div:hover {
+    background-color: #fff;
+    color: #fa0;
+}
+
+.c1b {
+    opacity: 1;
+    width: 0px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+    left: 160px;
+    top: -55px;
+    transition: width 0.6s, left 0.6s;
+
+}
+
+.c2b {
+    opacity: 1;
+    width: 0px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+    left: 160px;
+    top: -55px;
+    transition: width 0.6s, left 0.6s;
+
+}
+
+.countr1 > a > div:hover .c1b {
+    width: 280px;
+    opacity: 0;
+    left: 20px;
+    transition: width 0.6s, left 0.6s;
+}
+
+.countr2 > a > div:hover .c2b {
+    width: 280px;
+    opacity: 0;
+    left: 20px;
+    transition: width 0.6s, left 0.6s;
+}
+
+.countr3 > a > div:hover .c2b {
+    width: 280px;
+    opacity: 0;
+    left: 20px;
+    transition: width 0.6s, left 0.6s;
+}
+
+.countr4 > a > div:hover .c2b {
+    width: 280px;
+    opacity: 0;
+    left: 20px;
+    transition: width 0.6s, left 0.6s;
+}
+
+.aboutyou {
+    padding-top: 150px;
+    margin-top: -100px;
+    text-align: center;
+    color: #eee;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutyou > p {
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.aboutyou > p > a {
+    color: #fa0;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 200px;
+    height: 150px;
+    background-color: #000;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.planefl {
+    background-image: url(planefl.png);
+    height: 80px;
+    width: 115px;
+    position: relative;
+    top: 50px;
+    left: -120px;
+    transform: rotate(26deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+.footer {
+    background-color: #444;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.footer2 {
+    background-color: #111;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    ;
+}
+
+footer:hover .planefl {
+    opacity: 1;
+    animation: plane 4s linear;
+}
+
+footer:hover .footer2 {
+    opacity: 0;
+    transition-delay: 4s;
+    opacity: 1;
+
+}
+
+.footer2 > p {
+    color: #fff;
+    font-size: 50px;
+    margin-right: 10px;
+    margin-top: 40px;
+
+}
+
+.w {
+    color: #fa0;
+}
+
+.w:hover {
+    text-decoration: underline;
+}
+
+.allmenu {
+    display: block;
+    width: 50%;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.allmenu > .menu {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    margin-top: -10px;
+
+}
+
+.menu + .menu {
+    padding-top: 20px;
+}
+
+.sights, .advices {
+    padding-top: 150px;
+    text-align: center;
+    color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.food,
+.facts {
+    width: 60%;
+    padding-top: 150px;
+    margin-top: -100px;
+    text-align: center;
+    color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    border-radius: 80px;
+    width: 600px;
+    height: 100%;
+    border: #fa0 10px solid;
+
+}
+
+.sights > p,
+.advices > p {
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.food > div > p,
+.facts > div > p {
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+
+.sights > h2,
+.food > h2,
+.facts > h2,
+.advices > h2 {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 30px;
+}
+
+.f1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fc1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food > div > img {
+    margin-right: 10px;
+}
+
+.facts > div > img {
+    margin-left: 10px;
+}
+
+.big {
+    padding-top: 150px;
+    text-align: center;
+    color: #eee;
+
+}
+
+.sights1 {
+    margin-top: -100px;
+}
+
+
+
+@media (max-width:1024px) {
+    header > div > a > h2 {
+        font-size: 19px;
+    }
+    header > div > div > a > h2 {
+        font-size: 19px;
+    }
+
+    .menu {
+        width: 120%;
+        margin-left: -50px;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    .ch > main > article > p {
+        font-size: 20px;
+    }
+    .ch > main > article > div > p {
+        font-size: 20px;
+    }
+
+    .countr {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .cb {
+        width: 700px;
+    }
+    .countr > a > div {
+        font-size: 20px;
+        margin-top: -50px;
+    }
+    .countr1 {
+        background-size: 270px 168px;
+    }
+    .countr2 {
+        background-size: 270px 168px;
+    }
+    .countr3 {
+        background-size: 270px 168px;
+    }
+    .countr4 {
+        background-size: 270px 168px;
+    }
+
+    .c1b,
+    .c2b {
+        left: 125px;
+
+    }
+
+    .countr1 > a > div:hover .c1b {
+        width: 220px;
+        opacity: 0;
+        left: 20px;
+        transition: width 0.6s, left 0.6s;
+    }
+    .countr2 > a > div:hover .c2b {
+        width: 220px;
+        opacity: 0;
+        left: 20px;
+        transition: width 0.6s, left 0.6s;
+    }
+
+    .countr3 > a > div:hover .c2b {
+        width: 220px;
+        opacity: 0;
+        left: 20px;
+        transition: width 0.6s, left 0.6s;
+    }
+
+    .countr4 > a > div:hover .c2b {
+        width: 220px;
+        opacity: 0;
+        left: -20px;
+        transition: width 0.6s, left 0.6s;
+    }
+    
+    footer:hover .planefl {
+    opacity: 1;
+    animation: plane 2s linear;
+}
+
+    footer:hover .footer2 {
+    opacity: 0;
+    transition-delay: 2s;
+    opacity: 1;
+
+}
+    
+    .food, .facts, .sights, .advices {
+        width: 70%;
+    }
+    
+    header>.menu {
+        width: 60%;
+    }
+}
